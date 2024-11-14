@@ -1,0 +1,21 @@
+ PYTHON PROGRAM IS PRIME OR NOT 
+
+def isprime(num):
+    flag=0
+    if num==2:
+        print("the number is prime")
+
+    else:
+        for i in range(2,(num//2),+1):
+            if num%i==0:
+                flag=1
+                break
+
+        if flag==1:
+            print("the number is not prime")
+
+        else:
+            print("the number is prime")
+
+num = int(input("ent er the number = "))
+isprime(num)
